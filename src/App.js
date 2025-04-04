@@ -1,7 +1,7 @@
 
 
 import React from "react";
-// import ProductList from "./ProductList";
+import ProductList from "./ProductList";
 
 function App() {
   return (
@@ -31,10 +31,11 @@ function App() {
         </header>
 
         {/* Product List */}
-        {/* <ProductList /> */}
+        <ProductList />
       </div>
     </div>
   );
+  
 }
 
 // Styles
