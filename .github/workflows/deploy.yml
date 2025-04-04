@@ -4,7 +4,7 @@ on:
   push:
      branches:
       - test
-    paths:
+     paths:
       - 'package.json'
       - '**/package.json'
 
