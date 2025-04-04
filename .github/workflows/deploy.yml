@@ -2,6 +2,8 @@ name: Run pipeline on package.json change
 
 on:
   push:
+     branches:
+      - test
     paths:
       - 'package.json'
       - '**/package.json'
