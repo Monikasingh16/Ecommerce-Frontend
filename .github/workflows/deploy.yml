@@ -27,5 +27,7 @@ jobs:
       - name: Run Build
         run: npm run build
 
+        # as we don't have anything related to that to test purpose like jest
+
       #- name: Run Tests (Optional)
        # run: npm test
