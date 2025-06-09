@@ -41,7 +41,7 @@
 
 
 
-name: Run pipeline on package.json change
+name: Run pipeline on package.json change for test
 
 # Manual trigger only
 on:
