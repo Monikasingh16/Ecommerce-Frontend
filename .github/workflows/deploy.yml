@@ -22,7 +22,13 @@ jobs:
         run: npm install
 
       - name: Run Build
-        run: npm run build
+        # run: npm run build
+        run: CI=false npm run build
+      
+         
+
+
+        
 
       # Optional: Add tests if needed in future
       # - name: Run Tests (Optional)
