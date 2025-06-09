@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+.custom-ant-table .ant-table-thead > tr > th {
+  background-color: #d46419 !important;
+  color: white !important;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.orange-button {
+  background-color: #d46419 !important;
+  color: white !important;
+  border: none !important;
+}
+
+
+/* Custom calendar styling */
+
+
+
+.custom-calendar .ant-picker-panel {
+  background-color: #1e1e1e !important;
+  color: #fff;
+}
+
+.custom-calendar .ant-picker-cell-inner {
+  color: #fff;
+}
+
+.custom-calendar .ant-picker-cell-selected .ant-picker-cell-inner,
+.custom-calendar .ant-picker-cell-inner:hover {
+  background-color: #d46419 !important;
+  color: #fff !important;
+}
+
+.custom-calendar .ant-picker-header {
+  color: #fff;
+}
+
+.custom-calendar .ant-picker-content th {
+  color: #d46419;
+}

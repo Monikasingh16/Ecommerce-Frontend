@@ -1,12 +1,51 @@
+# name: Run pipeline on package.json change
+
+# on:
+#   push:
+#      branches:
+#       - test
+#      paths:
+#       - 'package.json'
+#       - '**/package.json'
+
+# jobs:
+#   run-on-package-change:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout Repository
+#         uses: actions/checkout@v3
+
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: '18'
+
+#       - name: Install Dependencies
+#         run: npm install
+
+#       - name: Run Build
+#         run: npm run build
+
+#         # as we don't have anything related to that to test purpose like jest
+
+#       #- name: Run Tests (Optional)
+#        # run: npm test
+
+
+
+
+
+
+#  Here is new code for the pipeline with the new change with workflow dispatch
+
+
+
 name: Run pipeline on package.json change
 
+# Manual trigger only
 on:
-  push:
-     branches:
-      - test
-     paths:
-      - 'package.json'
-      - '**/package.json'
+  workflow_dispatch:
 
 jobs:
   run-on-package-change:
@@ -27,7 +66,6 @@ jobs:
       - name: Run Build
         run: npm run build
 
-        # as we don't have anything related to that to test purpose like jest
-
-      #- name: Run Tests (Optional)
-       # run: npm test
+      # Optional: Add tests if needed in future
+      # - name: Run Tests (Optional)
+      #   run: npm test
