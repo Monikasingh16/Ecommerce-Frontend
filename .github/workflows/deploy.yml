@@ -41,7 +41,7 @@
 
 
 
-name: Run pipeline on package.json change
+name: Manual dispatch workflow trigger
 
 # Manual trigger only
 on:
